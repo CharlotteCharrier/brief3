@@ -42,29 +42,6 @@ const result = fetch(url, options)
 })
 .catch((err) => console.error("error:" + err));
 
-
-const getMovieDetails = () => {
-    console.log("hello");
-    window.addEventListener("load", () => {
-        const id = new URL(document.location.href).searchParams.get('id');
-        
-        const url = `https://api.themoviedb.org/3/credit/${id}`;
-        const options = {
-          method: 'GET',
-          headers: {
-            accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5OTZiZDYzYjNmN2RlMjVjZDA5N2E2MzQ0ZTExYzhiMiIsInN1YiI6IjY1ZGM5ZTVhMDNiZjg0MDE0NWFlMjM2NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.e4W_1hREgdktDza0Towxm4obee1wwZ_dde0fZLC92RM'
-          }
-        };
-        fetch(url, options)
-          .then(res => {
-            // res.json() 
-            console.log("res");})
-          .then(json => console.log(json))
-          .catch(err => console.error('error:' + err));
-    })
-}
-
 const ReUrl = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=fr-FR&page=1&sort_by=popularity.desc';
 const ReOptions = {
   method: 'GET',
@@ -83,7 +60,7 @@ fetch(ReUrl, ReOptions)
     for(let i = 0; i < 6; i++) {
     
       if(data.results[i].poster_path) {
-        recommendations.innerHTML += ` <h2>Pouplar in you region</h2>
+        recommendations.innerHTML += ` <h2>Popular in you region</h2>
       <button id=${data.results[i].id}><img src= https://image.tmdb.org/t/p/w500${data.results[i].poster_path} alt="">
       <h1 class="title">${data.results[i].title}</h1></button>`
     }
