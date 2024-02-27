@@ -2,6 +2,7 @@ let movies = []
 // variable that gets the id in the url
 const id = new URL(document.location.href).searchParams.get('id');
 let detailContainer = document.querySelector('.detailContainer');
+let title = document.querySelector('title');
 
 const url = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&release_date.gte=2024-01-01&release_date.lte=2024-02-29&sort_by=primary_release_date.desc";
 const options = {
@@ -23,12 +24,12 @@ const result = fetch(url, options)
     // look into the movies array for the element that has the same id we got into the url and injects information in html when found
     movies.find((element) => {
         if(element.id == id) {
+            title.innerText = `${element.title}`
             detailContainer.innerHTML = `
             <img src= https://image.tmdb.org/t/p/w500${element.poster_path} alt="">
             <h1 class="title">${element.title}<h1>
             <p>${element.release_date}</p>
-            <p>${element.overview}</p>
-            `
+            <p>${element.overview}</p>`
         }
     })
 })
