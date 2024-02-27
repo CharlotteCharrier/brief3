@@ -1,6 +1,3 @@
-// import { getMovieDetails } from './details.js';
-
-
 let slider = document.querySelector("#poster-slider")
 let movies = []
 
@@ -42,12 +39,8 @@ const result = fetch(url, options)
       button.addEventListener("click", (e) => {
         document.location.href = `/details.html?id=${e.currentTarget.id}`
         getMovieDetails();
-        // const id = new URL(document.location.href).searchParams.get('id')
       })
     })
-      // buttonDetails.addEventListener('click', (e) => {
-      //   console.log("test");
-      // })
   }
   return data;
   

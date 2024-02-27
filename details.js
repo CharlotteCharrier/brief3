@@ -1,7 +1,3 @@
-// import { getMovieDetails } from './details.js';
-
-
-// let slider = document.querySelector("#poster-slider")
 let movies = []
 const id = new URL(document.location.href).searchParams.get('id');
 let detailContainer = document.querySelector('.detailContainer');
