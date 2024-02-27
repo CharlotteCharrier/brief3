@@ -11,6 +11,8 @@ let formattedDate = year + "/" + month + "/" + day;
 
 const url = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.gte=${formattedDate}&sort_by=popularity.desc`;
 
+
+
 const options = {
   method: "GET",
   headers: {
