@@ -41,22 +41,19 @@ const result = fetch(url, options)
       <h1 class="title">${data.results[i].title}</h1>`
     }
 
-    
+    // select all the buttons that contain the posters and titles of the movies
     let buttonDetails = document.querySelectorAll('button'); 
+    // create an new array with all buttons to secure (see Omar's comment about lady gaga to understsand better)
     let newbuttonDetails = Array.from(buttonDetails);
+    // there's a forEach loop on all the buttons which adds an eventListener on click to every button, sends user to another page called 'details.html' and sends the id of the movie on which you clicked to the url
     newbuttonDetails.forEach((button) => {
       button.addEventListener("click", (e) => {
         document.location.href = `/details.html?id=${e.currentTarget.id}`
-        getMovieDetails();
-        // const id = new URL(document.location.href).searchParams.get('id')
       })
     })
-      // buttonDetails.addEventListener('click', (e) => {
-      //   console.log("test");
-      // })
   }
   return data;
-  
+
 })
 .catch((err) => console.error("error:" + err));
 
