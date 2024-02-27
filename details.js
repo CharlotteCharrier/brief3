@@ -42,7 +42,7 @@ const result = fetch(url, options)
 })
 .catch((err) => console.error("error:" + err));
 
-const ReUrl = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=fr-FR&page=1&sort_by=popularity.desc';
+const ReUrl = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=${navigator.language}&page=1&sort_by=popularity.desc`;
 const ReOptions = {
   method: 'GET',
   headers: {
