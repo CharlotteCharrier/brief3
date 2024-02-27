@@ -1,4 +1,4 @@
-import { name } from './utils.js'
+// import { getMovieDetails } from './details.js';
 
 
 let slider = document.querySelector("#poster-slider")
@@ -20,6 +20,7 @@ const result = fetch(url, options)
   .then((response) => response.json())
   // again another promise
   .then((data) => {
+    console.log( data.results);
   // i'm not sure that JSON.objects behaves like Arrays so for security i made a shallow (lady Gaga) copy into an Array
     movies = Array.from(data.results)
   // loop through every element of my new Array and inject photo into the DOM
@@ -40,6 +41,7 @@ const result = fetch(url, options)
     newbuttonDetails.forEach((button) => {
       button.addEventListener("click", (e) => {
         document.location.href = `/details.html?id=${e.currentTarget.id}`
+        getMovieDetails();
         // const id = new URL(document.location.href).searchParams.get('id')
       })
     })
