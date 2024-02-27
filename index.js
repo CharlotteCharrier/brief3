@@ -1,8 +1,14 @@
 let slider = document.querySelector("#poster-slider")
 let movies = []
+let date = new Date();
+let year = date.toLocaleString("default", { year: "numeric" });
+let month = date.toLocaleString("default", { month: "2-digit" });
+let day = date.toLocaleString("default", { day: "2-digit" });
+let formattedDate = year + "-" + month + "-" + day;
 
-const url =
-  "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&release_date.gte=2024-01-01&release_date.lte=2024-02-29&sort_by=primary_release_date.desc";
+
+const url = `https://api.themoviedb.org/3/discover/movie?certification.gte=${formattedDate}&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc`;
+
 const options = {
   method: "GET",
   headers: {
