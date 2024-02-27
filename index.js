@@ -4,10 +4,12 @@ let date = new Date();
 let year = date.toLocaleString("default", { year: "numeric" });
 let month = date.toLocaleString("default", { month: "2-digit" });
 let day = date.toLocaleString("default", { day: "2-digit" });
-let formattedDate = year + "-" + month + "-" + day;
+let formattedDate = year + "/" + month + "/" + day;
+
+//console.log(navigator.language)
 
 
-const url = `https://api.themoviedb.org/3/discover/movie?certification.gte=${formattedDate}&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc`;
+const url = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.gte=${formattedDate}&sort_by=popularity.desc`;
 
 const options = {
   method: "GET",
@@ -26,7 +28,7 @@ const result = fetch(url, options)
   // i'm not sure that JSON.objects behaves like Arrays so for security i made a shallow (lady Gaga) copy into an Array
     movies = Array.from(data.results)
   // loop through every element of my new Array and inject photo into the DOM
-    for(let i = 0; i < 7; i++) {
+    for(let i = 0; i < 6; i++) {
       //check if poster image is exists
       if(data.results[i].poster_path) {
         slider.innerHTML += `<button id=${data.results[i].id}><img src= https://image.tmdb.org/t/p/w500${data.results[i].poster_path} alt="">
