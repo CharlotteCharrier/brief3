@@ -44,7 +44,6 @@ showmore.addEventListener("click", () => {
 })
 
 const url = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.gte=${formattedDate}&sort_by=popularity.desc`;
-
 const options = {
   method: "GET",
   headers: {
@@ -53,6 +52,7 @@ const options = {
       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5OTZiZDYzYjNmN2RlMjVjZDA5N2E2MzQ0ZTExYzhiMiIsInN1YiI6IjY1ZGM5ZTVhMDNiZjg0MDE0NWFlMjM2NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.e4W_1hREgdktDza0Towxm4obee1wwZ_dde0fZLC92RM",
   },
 };
+
 // Fetch API call
 const result = fetch(url, options)
   // returns a promise
