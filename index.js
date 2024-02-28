@@ -6,12 +6,7 @@ let month = date.toLocaleString("default", { month: "2-digit" });
 let day = date.toLocaleString("default", { day: "2-digit" });
 let formattedDate = year + "/" + month + "/" + day;
 
-//console.log(navigator.language)
-
-
 const url = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.gte=${formattedDate}&sort_by=popularity.desc`;
-
-
 
 const options = {
   method: "GET",
@@ -21,6 +16,7 @@ const options = {
       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5OTZiZDYzYjNmN2RlMjVjZDA5N2E2MzQ0ZTExYzhiMiIsInN1YiI6IjY1ZGM5ZTVhMDNiZjg0MDE0NWFlMjM2NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.e4W_1hREgdktDza0Towxm4obee1wwZ_dde0fZLC92RM",
   },
 };
+
 // Fetch API call
 const result = fetch(url, options)
   // returns a promise
@@ -37,8 +33,8 @@ const result = fetch(url, options)
       <h1 class="title">${data.results[i].title}</h1></button>`
     }
     else {
-      slider.innerHTML += `<img src= "https://salonlfc.com/wp-content/uploads/2018/01/image-not-found-scaled-1150x647.png" alt="">
-      <h1 class="title">${data.results[i].title}</h1>`
+      slider.innerHTML += `<button id=${data.results[i].id}><img src= "https://salonlfc.com/wp-content/uploads/2018/01/image-not-found-scaled-1150x647.png" alt="">
+      <h1 class="title">${data.results[i].title}</h1></button>`
     }
 
     // select all the buttons that contain the posters and titles of the movies
