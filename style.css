@@ -64,6 +64,13 @@ body {
     color: #33658A;
 }
 
+.show-more {
+    background-color: #33658A;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 footer {
     background-color: #33658A;
     color: #9AC6C5;
