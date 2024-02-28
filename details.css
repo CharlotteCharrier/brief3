@@ -46,7 +46,7 @@ body {
 .populaire {
     font-size: 1.8rem;
     font-weight: bold;
-    color: darkblue;
+    color: #33658A;
     margin-bottom: 20px;
 }
 
@@ -61,6 +61,9 @@ footer {
 }
 
 @media only screen and (min-width: 1280px) {
+    header {
+        height: 300px;
+    }
     .detailContainer {
         display: flex;
         flex-direction: row;
