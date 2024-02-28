@@ -92,13 +92,14 @@ footer {
         display: grid;
         grid-template-columns: repeat(6, calc(16.6% - 10px));
         gap: 10px;
+        height: 700px
     }
     #poster-slider button {
         max-height: 100px;
     }
     .show-more {
         position: relative;
-        top: 180px;
+        top: 80px;
     }
 }
 
@@ -108,12 +109,15 @@ footer {
     }
     .landing-container {
         margin-top: 5%;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     #poster-slider {
         grid-template-columns: repeat(6, calc(20% - 10px));
+        height: 800px;
     }
     .show-more {
-        top: 200px;
+        top: 150px;
     }
 } 
