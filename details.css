@@ -50,6 +50,16 @@ body {
     margin-bottom: 20px;
 }
 
+footer {
+    background-color: #33658A;
+    color: #9AC6C5;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
 @media only screen and (min-width: 1280px) {
     .detailContainer {
         display: flex;
@@ -84,5 +94,14 @@ body {
     .recommendation img {
         width: 100%;
         height: auto;
+    }
+    footer {
+        background-color: #33658A;
+        color: #9AC6C5;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
     }
 }
