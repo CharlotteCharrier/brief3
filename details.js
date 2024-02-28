@@ -1,6 +1,4 @@
 let recommendations = document.querySelector(".recommendation")
-let populaire = document.querySelector(".populaire");
-// let movies = []
 let ReMovies = []
 // variable that gets the id in the url
 let id = new URL(document.location.href).searchParams.get('id');
@@ -41,9 +39,9 @@ const result = fetch(url, options)
       title.innerText = `${element.title}`
       detailContainer.innerHTML = `
             <img src= https://image.tmdb.org/t/p/w500${element.poster_path} alt="">
-            <h1 class="title">${element.title}<h1>
+            <div class="text-div"><h1 class="title">${element.title}</h1>
             <p>${element.release_date}</p>
-            <p>${element.overview}</p>`
+            <p>${element.overview}</p></div>`
   })
   .catch((err) => console.error("error:" + err));
 
@@ -56,7 +54,7 @@ fetch(ReUrl, ReOptions)
     for (let i = 0; i < 6; i++) {
 
       if (data.results[i].poster_path) {
-        populaire.innerHTML += `
+        recommendations.innerHTML += `
       <button id=${data.results[i].id}><img src= https://image.tmdb.org/t/p/w500${data.results[i].poster_path} alt="">
       <h1 class="title">${data.results[i].title}</h1></button>`
       }
