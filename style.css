@@ -10,6 +10,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 200px;
 }
 
 .logo {
@@ -61,4 +62,13 @@ body {
 
 #poster-slider h2 {
     color: #33658A;
+}
+
+footer {
+    background-color: #33658A;
+    color: #9AC6C5;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
