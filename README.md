@@ -15,10 +15,12 @@ Puis nous avons établi une charte graphique.
 Omar a créé un compte, a récupéré son access token et a effectué un test sur le site. Il a obtenu un retour avec un statut "200 OK" puis l'a implémenté dans le projet.
 
 #Création de la page details
-Charlotte a fait en sorte de récupérer l'id du film sur lequel on clique dans la page d'accueil afin d'emmener l'utilisateu sur une page 'details.html' suivie de l'id du film pour obtenir plus de détails sur ce dernier.
+Charlotte a fait en sorte de récupérer l'id du film sur lequel on clique dans la page d'accueil afin d'emmener l'utilisateur sur une page 'details.html' suivie de l'id du film pour obtenir plus de détails sur ce dernier.
 
 #Création des recommandations 
 Omar
+
+#Linker les recommandations pour accéder à leurs détails
 
 #Commencer le CSS
 Charlotte
