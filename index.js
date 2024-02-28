@@ -30,11 +30,11 @@ const result = fetch(url, options)
       //check if poster image is exists
       if(data.results[i].poster_path) {
         slider.innerHTML += `<button id=${data.results[i].id}><img src= https://image.tmdb.org/t/p/w500${data.results[i].poster_path} alt="">
-      <h1 class="title">${data.results[i].title}</h1></button>`
+      <h2 class="title">${data.results[i].title}</h2></button>`
     }
     else {
       slider.innerHTML += `<button id=${data.results[i].id}><img src= "https://salonlfc.com/wp-content/uploads/2018/01/image-not-found-scaled-1150x647.png" alt="">
-      <h1 class="title">${data.results[i].title}</h1></button>`
+      <h2 class="title">${data.results[i].title}</h2></button>`
     }
 
     // select all the buttons that contain the posters and titles of the movies
