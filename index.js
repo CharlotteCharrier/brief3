@@ -39,7 +39,7 @@ function showFilms(data) {
 }
 
 showmore.addEventListener("click", () => {
-  moviecount+=3
+  moviecount += 6
   showFilms(data)
 })
 
