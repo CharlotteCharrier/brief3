@@ -48,7 +48,7 @@ Nous avons utilisé GitHub pour collaborer sur le projet à deux. Nous avons sui
 
 7. Fusion des pull requests une fois validées.
 
-![git](https://s9.gifyu.com/images/SFrST.gif)
+![git](https://github.com/CharlotteCharrier/brief3/blob/main/git.gif)
 
 # Github project 
 
