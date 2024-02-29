@@ -103,7 +103,7 @@ footer {
         height: 700px;
         width: 100vh;
     }
-    #posster-slider h2 {
+    #poster-slider h2 {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;

@@ -41,6 +41,13 @@ body {
     margin-bottom: 20px;
     max-width: 100%;
     max-height: 100%;
+    border-radius: 10px;
+}
+
+.text-div {
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 1rem;
 }
 
 .populaire {
@@ -49,6 +56,11 @@ body {
     color: #33658A;
     margin-bottom: 20px;
     text-align: center;
+}
+
+.recommendation {
+    display: flex;
+    flex-direction: column;
 }
 
 .recommendation button {
@@ -89,8 +101,12 @@ footer {
         margin-left: 20px;
     }
 
+    .text-div {
+        margin-left: 2rem;
+    }
+
     .text-div p {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: bold;
         margin-left: 30px;
     }
@@ -98,6 +114,11 @@ footer {
         font-size: 3rem;
         font-weight: bold;
         margin-left: 30px;
+    }
+
+    .populaire {
+        text-align: start;
+        margin: 20px;
     }
 
     .recommendation {
@@ -114,6 +135,14 @@ footer {
         width: 100%;
         height: auto;
     }
+
+    .recommendation h1 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 1.2rem;
+    }
+
     footer {
         background-color: #33658A;
         color: #9AC6C5;
