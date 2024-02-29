@@ -116,8 +116,10 @@ footer {
     #poster-slider {
         grid-template-columns: repeat(6, calc(20% - 10px));
         height: 800px;
+        margin-top: 0;
+        height: auto;
     }
     .show-more {
-        top: 150px;
+        top: 300px;
     }
 } 
