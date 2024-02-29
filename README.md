@@ -23,14 +23,14 @@ Ensuite, ouvrez le fichier index.html et exécutez l'extension Live Server. Si v
 ![liveserver](https://i0.wp.com/www.alphr.com/wp-content/uploads/2023/05/open-with-live-server.png?w=700&ssl=1)
 
 
-## Notre organisation
+# Notre organisation
 
 
-# Maquettes
+## Maquettes
 
 ![figma](https://s9.gifyu.com/images/SFrbq.png)
 
-# Git
+## Git
 
 Nous avons utilisé GitHub pour collaborer sur le projet à deux. Nous avons suivi les étapes suivantes :
 
@@ -50,7 +50,7 @@ Nous avons utilisé GitHub pour collaborer sur le projet à deux. Nous avons sui
 
 ![git](https://github.com/CharlotteCharrier/brief3/blob/main/git.gif)
 
-# Github project 
+## Github project 
 
 Nous avons utilisé github project pour gérer la répartition des tâches ainsi que la gestion de projet en rajoutant de nouvelles tâches ou tâches optionnelles au fur et a mesure de notre avancement. 
 
@@ -59,8 +59,12 @@ Nous avons utilisé github project pour gérer la répartition des tâches ainsi
 ![gitg](https://s9.gifyu.com/images/SFrzT.png)
 
 
-# Lighthouse
+## Lighthouse
 
 ![lighthouse](https://s9.gifyu.com/images/SFrp3.png)
+
+## W3C validator
+
+![htmlvalidator](https://s9.gifyu.com/images/SFrjs.png)
 
 
