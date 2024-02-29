@@ -48,6 +48,23 @@ body {
     font-weight: bold;
     color: #33658A;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.recommendation button {
+    border: transparent;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.recommendation img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.recommendation h1 {
+    padding: 10px;
+    color: #33658A;
 }
 
 footer {
@@ -91,7 +108,6 @@ footer {
 
     .recommendation button {
         width: 100%;
-        
     }
 
     .recommendation img {
