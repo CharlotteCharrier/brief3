@@ -29,6 +29,7 @@ Ensuite, ouvrez le fichier index.html et exécutez l'extension Live Server. Si v
 ## Maquettes
 
 ![figma](https://s9.gifyu.com/images/SFrbq.png)
+https://www.figma.com/file/HTM1kZMPlFyKu9E5CQCasl/Brief-3?type=design&node-id=0%3A1&mode=design&t=25EypZO9w0mgGOKK-1
 
 ## Git
 
