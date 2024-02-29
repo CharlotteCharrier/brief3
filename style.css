@@ -41,6 +41,7 @@ body {
     margin-bottom: 20px;
     max-width: 100%;
     max-height: 100%;
+    border-radius: 10px;
 }
 
 .landing-container button {
@@ -60,6 +61,7 @@ body {
 #poster-slider button {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 10px;
 }
 
 #poster-slider h2 {
@@ -88,22 +90,36 @@ footer {
     header {
         height: 250px;
     }
+    .landing-container {
+        margin: 20px 0 0 0;
+    }
+    .landing-container h1 {
+        margin-bottom: 30px;
+    }
     #poster-slider {
         display: grid;
         grid-template-columns: repeat(6, calc(16.6% - 10px));
         gap: 10px;
-        height: 700px
+        height: 700px;
+        width: 100vh;
+    }
+    #posster-slider h2 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 1.2rem;
     }
     #poster-slider button {
         max-height: 100px;
+        margin-bottom: 200px;
     }
     .show-more {
         position: relative;
-        top: 80px;
     }
 }
 
-@media (min-width: 1024px) {
+
+@media (min-width: 1280px) {
     header {
         height: 300px;
     }
@@ -116,8 +132,10 @@ footer {
     #poster-slider {
         grid-template-columns: repeat(6, calc(20% - 10px));
         height: 800px;
+        margin-top: 0;
+        height: auto;
     }
-    .show-more {
-        top: 150px;
+    #poster-slider button {
+        margin-bottom: 300px;
     }
 } 
