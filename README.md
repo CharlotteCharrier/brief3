@@ -1,5 +1,29 @@
 # brief3
 
+
+
+## Exécuter le projet en local
+
+Si vous utilisez VSCode, vous devez cloner le projet localement.
+
+Dans votre terminal, collez la commande suivante :
+
+```bash
+git clone https://github.com/CharlotteCharrier/brief3.git
+```
+
+Maintenant, ouvrez le fichier dans VSCode. Si vous n'avez pas encore installé VSCode, vous pouvez le télécharger [ici](https://code.visualstudio.com/download).
+
+```shell
+code .
+```
+
+Ensuite, ouvrez le fichier index.html et exécutez l'extension Live Server. Si vous ne l'avez pas déjà installée, vous pouvez l'obtenir [ici](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
+![liveserver](https://i0.wp.com/www.alphr.com/wp-content/uploads/2023/05/open-with-live-server.png?w=700&ssl=1)
+
+
+
 #Comment voir le projet ?
 Pas besoin de npm i, juste de lancer le go live!
 
