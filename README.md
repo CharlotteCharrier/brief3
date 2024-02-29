@@ -23,9 +23,35 @@ Ensuite, ouvrez le fichier index.html et exécutez l'extension Live Server. Si v
 ![liveserver](https://i0.wp.com/www.alphr.com/wp-content/uploads/2023/05/open-with-live-server.png?w=700&ssl=1)
 
 
+## Notre organisation
 
-#Comment voir le projet ?
-Pas besoin de npm i, juste de lancer le go live!
+# Maquettes
+
+# Git
+
+Nous avons utilisé GitHub pour collaborer sur le projet à deux. Nous avons suivi les étapes suivantes :
+
+Création d'un dépôt GitHub pour le projet.
+Clonage du dépôt sur nos machines locales.
+Création de branches pour travailler sur des fonctionnalités spécifiques.
+Réalisation des modifications sur nos branches respectives.
+Soumission de pull requests pour fusionner nos modifications dans la branche principale.
+Révision et validation des pull requests avec l'autre collaborateur.
+Fusion des pull requests une fois validées.
+
+# Github project 
+
+Nous avons utilisé github project pour gérer la répartition des tâches ainsi que la gestion de projet en rajoutant de nouvelles tâches ou tâches optionnelles au fur et a mesure de notre avancement. 
+
+## Validations 
+
+# W3C 
+
+# Lighthouse
+
+
+
+
 
 #Initialisation du projet
 Charlotte a créé les fichiers index.html, style.css et index.js et les a liés ensemble puis a mergé sur main pour que tout le monde parte de la même base.
