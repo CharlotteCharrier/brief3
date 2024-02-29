@@ -14,7 +14,7 @@ function showFilms(data) {
   // i'm not sure that JSON.objects behaves like Arrays so for security i made a shallow (lady Gaga) copy into an Array
   movies = Array.from(data.results);
   // loop through every element of my new Array and inject photo into the DOM
-  for (let i = 0; i < moviecount; i++) {
+  for (let i = 0; i < moviecount && i < movies.length - 2; i++) {
     //check if poster image is exists
     if (data.results[i].poster_path) {
       slider.innerHTML += `<button class="slider-button" id=${data.results[i].id}><img src= https://image.tmdb.org/t/p/w500${data.results[i].poster_path} alt="">
